@@ -167,7 +167,7 @@ The dashboard supports data-driven decision-making by making KPIs and trends ins
 
 ## Author & Contact
 
-**Name:** Aakriti Mathur
+**Name:** Aakriti Kumari
 **Degree:** B.Tech Computer Science Engineering
 **Role:** Data Analytics Intern
 **GitHub:** [Your GitHub Profile URL]

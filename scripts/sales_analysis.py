@@ -1,7 +1,7 @@
 """
 =============================================================
   Sales & Revenue Analysis Dashboard - Python Script
-  Author  : Aakriti Mathur | B.Tech CSE Student
+  Author  : Aakriti Kumari | B.Tech CSE Student
   Project : Data Analytics Internship
 =============================================================
 """

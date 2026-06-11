@@ -33,7 +33,7 @@ After installing, open **Command Prompt (cmd)** or **Terminal**
 
 ```bash
 # 1. Setup your name and email (only once ever)
-git config --global user.name "Aakriti Mathur"
+git config --global user.name "Aakriti Kumari"
 git config --global user.email "your-email@gmail.com"
 
 # 2. Initialize git in your project folder

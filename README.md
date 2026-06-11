@@ -150,7 +150,7 @@ Open dashboard/Sales_Dashboard.html in any browser — no installation needed!
 
 ## 👩‍💻 Author
 
-**Aakriti Mathur**
+**Aakriti Kumari**
 B.Tech Computer Science Engineering | Data Analytics Intern
 
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-black)](https://github.com/)
