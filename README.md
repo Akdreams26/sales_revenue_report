@@ -151,11 +151,10 @@ Open dashboard/Sales_Dashboard.html in any browser — no installation needed!
 ## 👩‍💻 Author
 
 **Aakriti Kumari**
-B.Tech Computer Science Engineering | Data Analytics Intern
+B.Tech CSE(AI/ML)
+Data Analytics Intern
 
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-black)](https://github.com/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/)
 
----
 
-*⭐ If you found this project helpful, please give it a star!*
