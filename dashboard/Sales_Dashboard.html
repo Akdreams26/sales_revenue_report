@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sales & Revenue Analysis Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; color: #333; }
+  header { background: linear-gradient(135deg, #1a237e, #283593); color: white;
+           padding: 20px 30px; display: flex; justify-content: space-between; align-items: center; }
+  header h1 { font-size: 1.5rem; }
+  header p  { font-size: 0.85rem; opacity: 0.8; margin-top: 4px; }
+  .badge { background: rgba(255,255,255,0.2); padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; }
+
+  .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+              padding: 24px 30px 0; }
+  .kpi-card { background: white; border-radius: 12px; padding: 20px;
+              box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-left: 4px solid; }
+  .kpi-card:nth-child(1) { border-color: #2196F3; }
+  .kpi-card:nth-child(2) { border-color: #4CAF50; }
+  .kpi-card:nth-child(3) { border-color: #FF9800; }
+  .kpi-card:nth-child(4) { border-color: #9C27B0; }
+  .kpi-label { font-size: 0.8rem; color: #888; text-transform: uppercase; letter-spacing: 0.5px; }
+  .kpi-value { font-size: 1.7rem; font-weight: 700; margin: 6px 0 2px; }
+  .kpi-sub   { font-size: 0.78rem; color: #4CAF50; }
+
+  .charts-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 16px;
+                 padding: 16px 30px; }
+  .chart-card  { background: white; border-radius: 12px; padding: 20px;
+                 box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .chart-card h3 { font-size: 0.95rem; color: #555; margin-bottom: 14px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+  .charts-grid2 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;
+                  padding: 0 30px 24px; }
+
+  footer { text-align: center; padding: 16px; font-size: 0.8rem; color: #999;
+           background: white; border-top: 1px solid #eee; }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>📊 Sales &amp; Revenue Analysis Dashboard</h1>
+    <p>Data Analytics Internship Project | Year: 2024</p>
+  </div>
+  <div class="badge">Aakriti Mathur &nbsp;|&nbsp; B.Tech CSE</div>
+</header>
+
+<!-- KPI Cards -->
+<div class="kpi-grid">
+  <div class="kpi-card">
+    <div class="kpi-label">Total Revenue</div>
+    <div class="kpi-value" style="color:#2196F3">₹5.48 Cr</div>
+    <div class="kpi-sub">▲ 120 Orders | 2,847 Units</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Total Profit</div>
+    <div class="kpi-value" style="color:#4CAF50">₹1.09 Cr</div>
+    <div class="kpi-sub">▲ 20.0% Profit Margin</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Avg Order Value</div>
+    <div class="kpi-value" style="color:#FF9800">₹45,686</div>
+    <div class="kpi-sub">Per transaction average</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-label">Top Category</div>
+    <div class="kpi-value" style="color:#9C27B0;font-size:1.3rem">Electronics</div>
+    <div class="kpi-sub">▲ 72% of total revenue</div>
+  </div>
+</div>
+
+<!-- Row 1: Line chart + Pie chart -->
+<div class="charts-grid">
+  <div class="chart-card">
+    <h3>📈 Monthly Revenue &amp; Profit Trend</h3>
+    <canvas id="monthlyChart" height="100"></canvas>
+  </div>
+  <div class="chart-card">
+    <h3>🍕 Revenue by Category</h3>
+    <canvas id="categoryPie" height="180"></canvas>
+  </div>
+</div>
+
+<!-- Row 2: Bar + Region + Segment -->
+<div class="charts-grid2">
+  <div class="chart-card">
+    <h3>🏆 Top 5 Products</h3>
+    <canvas id="topProducts" height="200"></canvas>
+  </div>
+  <div class="chart-card">
+    <h3>🌍 Revenue by Region</h3>
+    <canvas id="regionChart" height="200"></canvas>
+  </div>
+  <div class="chart-card">
+    <h3>📅 Quarterly Revenue</h3>
+    <canvas id="quarterChart" height="200"></canvas>
+  </div>
+</div>
+
+<footer>Sales &amp; Revenue Analysis Dashboard &nbsp;|&nbsp; Aakriti Mathur &nbsp;|&nbsp; B.Tech CSE &nbsp;|&nbsp; Data Analytics Internship 2024</footer>
+
+<script>
+const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const revenue = [3150000,2890000,4200000,5100000,4800000,4350000,5500000,5200000,6100000,5800000,6500000,7100000];
+const profit  = [630000,578000,840000,1020000,960000,870000,1100000,1040000,1220000,1160000,1300000,1420000];
+
+new Chart(document.getElementById('monthlyChart'), {
+  type: 'line',
+  data: {
+    labels: months,
+    datasets: [
+      { label: 'Revenue', data: revenue, borderColor: '#2196F3', backgroundColor: 'rgba(33,150,243,0.1)',
+        fill: true, tension: 0.4, pointRadius: 5 },
+      { label: 'Profit', data: profit, borderColor: '#4CAF50', backgroundColor: 'rgba(76,175,80,0.05)',
+        fill: false, tension: 0.4, pointRadius: 5 }
+    ]
+  },
+  options: { responsive: true, plugins: { legend: { position: 'top' } },
+    scales: { y: { ticks: { callback: v => '₹'+(v/1e5).toFixed(0)+'L' } } } }
+});
+
+new Chart(document.getElementById('categoryPie'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Electronics', 'Furniture', 'Stationery'],
+    datasets: [{ data: [72, 23, 5], backgroundColor: ['#2196F3','#FF9800','#4CAF50'],
+                 borderWidth: 3, borderColor: '#fff' }]
+  },
+  options: { responsive: true, plugins: { legend: { position: 'bottom' } } }
+});
+
+new Chart(document.getElementById('topProducts'), {
+  type: 'bar',
+  data: {
+    labels: ['Laptop Pro','Gaming Laptop','Laptop Ultra','Smart TV 65','Smart TV 55'],
+    datasets: [{ label: 'Revenue', data: [8500000,5700000,5500000,2550000,1950000],
+                 backgroundColor: ['#1a237e','#283593','#3949ab','#5c6bc0','#7986cb'] }]
+  },
+  options: { indexAxis: 'y', responsive: true, plugins: { legend: { display: false } },
+    scales: { x: { ticks: { callback: v => '₹'+(v/1e5).toFixed(0)+'L' } } } }
+});
+
+new Chart(document.getElementById('regionChart'), {
+  type: 'bar',
+  data: {
+    labels: ['North','South','East','West'],
+    datasets: [{ label: 'Revenue', data: [15200000, 14100000, 13800000, 12900000],
+                 backgroundColor: ['#2196F3','#FF9800','#4CAF50','#E91E63'] }]
+  },
+  options: { responsive: true, plugins: { legend: { display: false } },
+    scales: { y: { ticks: { callback: v => '₹'+(v/1e5).toFixed(0)+'L' } } } }
+});
+
+new Chart(document.getElementById('quarterChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Q1','Q2','Q3','Q4'],
+    datasets: [{ label: 'Revenue', data: [10240000, 14250000, 16800000, 19710000],
+                 backgroundColor: ['#FF6B6B','#4ECDC4','#45B7D1','#96CEB4'] }]
+  },
+  options: { responsive: true, plugins: { legend: { display: false } },
+    scales: { y: { ticks: { callback: v => '₹'+(v/1e5).toFixed(0)+'L' } } } }
+});
+</script>
+</body>
+</html>

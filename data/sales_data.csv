@@ -1,0 +1,121 @@
+Order_ID,Product,Category,Region,Sales_Amount,Profit,Quantity,Discount,Order_Date,Customer_Segment
+1001,Laptop Pro,Electronics,North,85000,17000,2,0.05,2024-01-05,Corporate
+1002,Office Chair,Furniture,South,12000,2400,5,0.10,2024-01-07,Home Office
+1003,Wireless Mouse,Electronics,East,1500,450,10,0.00,2024-01-10,Retail
+1004,Notebook Pack,Stationery,West,800,200,20,0.05,2024-01-12,Retail
+1005,Standing Desk,Furniture,North,32000,6400,1,0.00,2024-01-15,Corporate
+1006,Monitor 27inch,Electronics,South,22000,4400,3,0.10,2024-01-18,Corporate
+1007,Pen Drive 64GB,Electronics,East,600,180,30,0.00,2024-01-20,Retail
+1008,File Cabinet,Furniture,West,8500,1700,2,0.05,2024-01-22,Home Office
+1009,Keyboard Mech,Electronics,North,4500,900,8,0.10,2024-01-25,Corporate
+1010,Sticky Notes,Stationery,South,300,90,50,0.00,2024-01-28,Retail
+1011,Tablet 10inch,Electronics,East,28000,5600,4,0.05,2024-02-02,Corporate
+1012,Bookshelf,Furniture,West,7500,1500,3,0.00,2024-02-05,Home Office
+1013,Webcam HD,Electronics,North,3200,640,6,0.10,2024-02-08,Corporate
+1014,Printer Ink,Stationery,South,1200,360,15,0.05,2024-02-10,Retail
+1015,Gaming Chair,Furniture,East,18000,3600,2,0.00,2024-02-14,Retail
+1016,SSD 500GB,Electronics,West,6500,1300,7,0.10,2024-02-17,Corporate
+1017,Whiteboard,Stationery,North,2500,500,4,0.00,2024-02-20,Corporate
+1018,Desk Lamp,Furniture,South,1800,360,9,0.05,2024-02-22,Home Office
+1019,Headphones BT,Electronics,East,5500,1100,5,0.10,2024-02-25,Retail
+1020,Paper Ream,Stationery,West,400,80,100,0.00,2024-02-28,Corporate
+1021,Laptop Pro,Electronics,South,85000,17000,1,0.05,2024-03-03,Corporate
+1022,Ergonomic Chair,Furniture,East,15000,3000,3,0.10,2024-03-06,Home Office
+1023,Smart Speaker,Electronics,West,4500,900,6,0.00,2024-03-09,Retail
+1024,Stapler Set,Stationery,North,600,120,25,0.05,2024-03-12,Retail
+1025,Monitor 24inch,Electronics,South,18000,3600,4,0.10,2024-03-15,Corporate
+1026,Coffee Table,Furniture,East,9500,1900,2,0.00,2024-03-18,Home Office
+1027,Webcam 4K,Electronics,West,8500,1700,3,0.05,2024-03-20,Corporate
+1028,Marker Pens,Stationery,North,450,90,40,0.00,2024-03-25,Retail
+1029,Tablet 12inch,Electronics,South,38000,7600,2,0.10,2024-03-28,Corporate
+1030,Storage Rack,Furniture,East,5500,1100,4,0.05,2024-03-30,Home Office
+1031,Laptop Ultra,Electronics,West,110000,22000,2,0.00,2024-04-02,Corporate
+1032,Sofa Set,Furniture,North,45000,9000,1,0.10,2024-04-05,Home Office
+1033,Router WiFi6,Electronics,South,7500,1500,5,0.05,2024-04-08,Corporate
+1034,Notebook Spiral,Stationery,East,350,70,60,0.00,2024-04-10,Retail
+1035,Monitor 32inch,Electronics,West,28000,5600,3,0.10,2024-04-14,Corporate
+1036,Study Table,Furniture,North,12000,2400,2,0.00,2024-04-17,Home Office
+1037,Wireless KB,Electronics,South,3500,700,7,0.05,2024-04-20,Retail
+1038,Scissors Pack,Stationery,East,200,40,80,0.00,2024-04-22,Retail
+1039,Laptop Pro,Electronics,West,85000,17000,3,0.10,2024-04-25,Corporate
+1040,Wardrobe,Furniture,North,35000,7000,1,0.05,2024-04-28,Home Office
+1041,Smart TV 55,Electronics,South,65000,13000,2,0.00,2024-05-02,Retail
+1042,Conference Chair,Furniture,East,20000,4000,5,0.10,2024-05-05,Corporate
+1043,Portable SSD,Electronics,West,9500,1900,4,0.05,2024-05-08,Corporate
+1044,Calculator Sci,Stationery,North,1500,300,12,0.00,2024-05-10,Retail
+1045,Monitor 27inch,Electronics,South,22000,4400,6,0.10,2024-05-14,Corporate
+1046,Recliner Chair,Furniture,East,22000,4400,2,0.00,2024-05-17,Home Office
+1047,Drone Camera,Electronics,West,42000,8400,1,0.05,2024-05-20,Retail
+1048,Folder Pack,Stationery,North,300,60,70,0.00,2024-05-22,Corporate
+1049,Gaming Laptop,Electronics,South,95000,19000,2,0.10,2024-05-25,Retail
+1050,Bookcase,Furniture,East,14000,2800,3,0.05,2024-05-28,Home Office
+1051,Smart Watch,Electronics,West,18000,3600,5,0.00,2024-06-02,Retail
+1052,Dining Table,Furniture,North,28000,5600,1,0.10,2024-06-05,Home Office
+1053,Laptop Pro,Electronics,South,85000,17000,2,0.05,2024-06-08,Corporate
+1054,Highlighter Set,Stationery,East,400,80,45,0.00,2024-06-10,Retail
+1055,Graphics Card,Electronics,West,35000,7000,3,0.10,2024-06-14,Corporate
+1056,Office Sofa,Furniture,North,32000,6400,2,0.00,2024-06-17,Corporate
+1057,Tablet 8inch,Electronics,South,18000,3600,4,0.05,2024-06-20,Retail
+1058,Clipboard Pack,Stationery,East,250,50,35,0.00,2024-06-22,Retail
+1059,Smart Speaker,Electronics,West,4500,900,8,0.10,2024-06-25,Retail
+1060,TV Stand,Furniture,North,8000,1600,3,0.05,2024-06-28,Home Office
+1061,Laptop Ultra,Electronics,East,110000,22000,1,0.00,2024-07-02,Corporate
+1062,Writing Desk,Furniture,South,16000,3200,2,0.10,2024-07-05,Home Office
+1063,Projector 4K,Electronics,West,55000,11000,1,0.05,2024-07-08,Corporate
+1064,Pen Set,Stationery,North,500,100,30,0.00,2024-07-10,Retail
+1065,Monitor 27inch,Electronics,South,22000,4400,4,0.10,2024-07-14,Corporate
+1066,Bean Bag,Furniture,East,7000,1400,3,0.00,2024-07-17,Retail
+1067,Earbuds Pro,Electronics,West,8500,1700,6,0.05,2024-07-20,Retail
+1068,Tape Rolls,Stationery,North,150,30,100,0.00,2024-07-22,Retail
+1069,Gaming Laptop,Electronics,South,95000,19000,2,0.10,2024-07-25,Corporate
+1070,Shelving Unit,Furniture,East,11000,2200,3,0.05,2024-07-28,Home Office
+1071,Smart TV 65,Electronics,West,85000,17000,1,0.00,2024-08-02,Retail
+1072,Office Desk,Furniture,North,18000,3600,2,0.10,2024-08-05,Corporate
+1073,Laptop Pro,Electronics,South,85000,17000,3,0.05,2024-08-08,Corporate
+1074,Index Cards,Stationery,East,200,40,90,0.00,2024-08-10,Retail
+1075,Wireless Mouse,Electronics,West,1500,450,15,0.10,2024-08-14,Retail
+1076,Lounge Chair,Furniture,North,25000,5000,2,0.00,2024-08-17,Home Office
+1077,Camera DSLR,Electronics,South,78000,15600,1,0.05,2024-08-20,Retail
+1078,Binder Pack,Stationery,East,350,70,50,0.00,2024-08-22,Corporate
+1079,Monitor 24inch,Electronics,West,18000,3600,5,0.10,2024-08-25,Corporate
+1080,Corner Sofa,Furniture,North,52000,10400,1,0.05,2024-08-28,Home Office
+1081,Tablet 12inch,Electronics,East,38000,7600,3,0.00,2024-09-02,Corporate
+1082,Study Chair,Furniture,South,8500,1700,4,0.10,2024-09-05,Home Office
+1083,Smart Watch,Electronics,West,18000,3600,6,0.05,2024-09-08,Retail
+1084,Correction Pen,Stationery,North,100,20,120,0.00,2024-09-10,Retail
+1085,Laptop Ultra,Electronics,East,110000,22000,2,0.10,2024-09-14,Corporate
+1086,Wall Shelf,Furniture,South,4500,900,5,0.00,2024-09-17,Home Office
+1087,Earbuds Pro,Electronics,West,8500,1700,8,0.05,2024-09-20,Retail
+1088,Sticky Notes,Stationery,North,300,60,75,0.00,2024-09-22,Retail
+1089,Gaming Monitor,Electronics,East,32000,6400,3,0.10,2024-09-25,Corporate
+1090,Cabinet Wood,Furniture,South,22000,4400,2,0.05,2024-09-28,Home Office
+1091,Smart TV 55,Electronics,West,65000,13000,2,0.00,2024-10-02,Retail
+1092,Executive Desk,Furniture,North,28000,5600,1,0.10,2024-10-05,Corporate
+1093,Laptop Pro,Electronics,East,85000,17000,4,0.05,2024-10-08,Corporate
+1094,Pencil Box,Stationery,South,150,30,80,0.00,2024-10-10,Retail
+1095,SSD 1TB,Electronics,West,12000,2400,5,0.10,2024-10-14,Corporate
+1096,Futon Sofa,Furniture,North,19000,3800,2,0.00,2024-10-17,Home Office
+1097,Webcam HD,Electronics,East,3200,640,9,0.05,2024-10-20,Corporate
+1098,Rubber Bands,Stationery,South,100,20,150,0.00,2024-10-22,Retail
+1099,Gaming Laptop,Electronics,West,95000,19000,3,0.10,2024-10-25,Corporate
+1100,Bookshelf Oak,Furniture,North,17500,3500,2,0.05,2024-10-28,Home Office
+1101,Projector HD,Electronics,East,38000,7600,2,0.00,2024-11-02,Corporate
+1102,Bed Frame,Furniture,South,45000,9000,1,0.10,2024-11-05,Home Office
+1103,Laptop Pro,Electronics,West,85000,17000,2,0.05,2024-11-08,Corporate
+1104,Paper Clips,Stationery,North,80,16,200,0.00,2024-11-10,Retail
+1105,Smart Speaker,Electronics,East,4500,900,10,0.10,2024-11-14,Retail
+1106,Dining Chair,Furniture,South,6500,1300,6,0.00,2024-11-17,Home Office
+1107,Tablet 10inch,Electronics,West,28000,5600,3,0.05,2024-11-20,Corporate
+1108,Staple Pins,Stationery,North,120,24,100,0.00,2024-11-22,Retail
+1109,Monitor 32inch,Electronics,East,28000,5600,4,0.10,2024-11-25,Corporate
+1110,Centre Table,Furniture,South,13000,2600,3,0.05,2024-11-28,Home Office
+1111,Gaming Laptop,Electronics,West,95000,19000,2,0.00,2024-12-02,Retail
+1112,Laptop Ultra,Electronics,North,110000,22000,3,0.10,2024-12-05,Corporate
+1113,Office Chair,Furniture,East,12000,2400,5,0.05,2024-12-08,Corporate
+1114,Notebook Pack,Stationery,South,800,160,30,0.00,2024-12-10,Retail
+1115,Smart TV 65,Electronics,West,85000,17000,2,0.10,2024-12-14,Retail
+1116,Sofa Bed,Furniture,North,32000,6400,1,0.00,2024-12-17,Home Office
+1117,Camera DSLR,Electronics,East,78000,15600,2,0.05,2024-12-20,Retail
+1118,Marker Pens,Stationery,South,450,90,55,0.00,2024-12-22,Retail
+1119,Laptop Pro,Electronics,West,85000,17000,5,0.10,2024-12-25,Corporate
+1120,Wardrobe,Furniture,North,35000,7000,2,0.05,2024-12-28,Home Office

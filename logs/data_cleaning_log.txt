@@ -1,0 +1,16 @@
+[2024-12-30 10:00:00] INFO  - Data cleaning started
+[2024-12-30 10:00:01] INFO  - Loaded sales_data.csv: 120 rows, 10 columns
+[2024-12-30 10:00:01] INFO  - Checking for null values...
+[2024-12-30 10:00:01] INFO  - Null values found: 0 (Dataset is clean)
+[2024-12-30 10:00:02] INFO  - Checking for duplicate Order_IDs...
+[2024-12-30 10:00:02] INFO  - Duplicates found: 0
+[2024-12-30 10:00:02] INFO  - Data types verified:
+[2024-12-30 10:00:02] INFO    - Order_ID     : int64   ✓
+[2024-12-30 10:00:02] INFO    - Sales_Amount  : float64 ✓
+[2024-12-30 10:00:02] INFO    - Profit        : float64 ✓
+[2024-12-30 10:00:02] INFO    - Order_Date    : object -> converted to datetime64 ✓
+[2024-12-30 10:00:03] INFO  - Added derived columns: Month, Quarter, Year
+[2024-12-30 10:00:03] INFO  - Profit_Margin calculated: Profit / Sales_Amount * 100
+[2024-12-30 10:00:03] INFO  - Data cleaning completed successfully
+[2024-12-30 10:00:03] INFO  - Cleaned data saved to: data/sales_data_cleaned.csv
+[2024-12-30 10:00:03] INFO  - Total records after cleaning: 120
